@@ -48,7 +48,7 @@ public class DBUtils {
 
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Registration","","");
-            psCheckUserExists = connection.prepareStatement("SELECT * FROM User-Info WHERE user_name = ?");
+            psCheckUserExists = connection.prepareStatement("SELECT * FROM `User-Info` WHERE user_name = ?");
             psCheckUserExists.setString(1,username);
             resultSet = psCheckUserExists.executeQuery();
 
@@ -58,7 +58,7 @@ public class DBUtils {
                 alert.setContentText("Can't use the username");
                 alert.show();
             }else{
-                psInsert = connection.prepareStatement("INSERT INTO User-Info (user_name,password,fav_channel, VALUES (?,?,?))");
+                psInsert = connection.prepareStatement("INSERT INTO `User-Info` (user_name, password, fav_channel) VALUES (?, ?, ?)");
                 psInsert.setString(1,username);
                 psInsert.setString(2,password);
                 psInsert.setString(3,chosenScrt);
@@ -106,7 +106,7 @@ public class DBUtils {
         ResultSet resultSet = null;
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Registration","","");
-            preparedStatement = connection.prepareStatement("SELECT password, fav_channel FROM User-Info WHERE user_name = ?");
+            preparedStatement = connection.prepareStatement("SELECT password, fav_channel FROM `User-Info` WHERE user_name = ?");
             preparedStatement.setString(1,username);
             resultSet = preparedStatement.executeQuery();
 
@@ -120,7 +120,7 @@ public class DBUtils {
                     String retrivePassword = resultSet.getString("password");
                     String retrivedChannel = resultSet.getString("fav_channel");
                     if(retrivePassword.equals(password)){
-                        changeScene(event,"log-in.fxml","Welcome!",username,retrivedChannel);
+                        changeScene(event,"Welcome!","logged-in.fxml",username,retrivedChannel);
                     }else {
                         System.out.println("Passwords Didn't match");
                         Alert alert = new Alert(Alert.AlertType.ERROR);

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="hbox_signup" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox fx:id="hbox_signup" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signuplogin.SignUpController">
    <children>
       <AnchorPane fx:id="anchor_pane_signup" prefHeight="400.0" prefWidth="331.0" style="-fx-background-color: black;">
          <children>
@@ -33,7 +33,7 @@
       </AnchorPane>
       <AnchorPane fx:id="anchor_pane2_signup" prefHeight="400.0" prefWidth="320.0" style="-fx-background-color: BLACK;">
          <children>
-            <Button fx:id="signup_btn" layoutX="128.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign Up" textFill="#fcf8f8">
+            <Button fx:id="signup_btn" layoutX="128.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="-fx-" text="Sign Up" textFill="#fc1111">
                <font>
                   <Font name="Nakula" size="18.0" />
                </font>
@@ -47,10 +47,10 @@
             <TextField fx:id="tf_password" layoutX="110.0" layoutY="144.0" promptText="Password" />
             <Label fx:id="label_username" layoutX="26.0" layoutY="105.0" text="Username" textFill="#ddd9d9" />
             <Label fx:id="label_password" layoutX="29.0" layoutY="148.0" text="Password" textFill="#ddd9d9" />
-            <RadioButton fx:id="radiobtn_signup" layoutX="123.0" layoutY="230.0" mnemonicParsing="false" text="Water Breathing" textFill="#eeeaea" />
-            <RadioButton fx:id="radiobtn2_signup" layoutX="123.0" layoutY="259.0" mnemonicParsing="false" text="Fire Breathing" textFill="#eeeaea" />
+            <RadioButton fx:id="rb_water" layoutX="123.0" layoutY="230.0" mnemonicParsing="false" text="Water Breathing" textFill="#eeeaea" />
+            <RadioButton fx:id="rb_fire" layoutX="123.0" layoutY="259.0" mnemonicParsing="false" text="Fire Breathing" textFill="#eeeaea" />
             <Label fx:id="label3_sign_up" layoutX="9.0" layoutY="353.0" text="Already Have An Account?" textFill="#ddd9d9" />
-            <Button fx:id="btn_signup" layoutX="180.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="LogIn" textFill="#2405eb" underline="true" />
+            <Button fx:id="btn_login" layoutX="180.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="LogIn" textFill="#2405eb" underline="true" />
             <Label layoutX="78.0" layoutY="186.0" text="Choose A Secret To Learn" textFill="#fcf6f6">
                <font>
                   <Font name="Nakula" size="17.0" />

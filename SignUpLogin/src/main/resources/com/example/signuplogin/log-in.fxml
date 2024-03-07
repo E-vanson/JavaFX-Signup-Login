@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="hbox_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox fx:id="hbox_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signuplogin.LoginController">
    <children>
       <AnchorPane fx:id="anchor_pane_login" prefHeight="400.0" prefWidth="302.0" style="-fx-background-color: black;">
          <children>
@@ -54,12 +54,12 @@
             </Label>
             <TextField fx:id="tf_login_password" layoutX="122.0" layoutY="227.0" promptText="Password" />
             <TextField fx:id="tf_login_username" layoutX="122.0" layoutY="188.0" promptText="UserName" />
-            <Button fx:id="btn_signup" layoutX="208.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Sign Up" textFill="#0a0af2" underline="true">
+            <Button fx:id="btn_signup" layoutX="208.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up" textFill="#0a0af2" underline="true">
                <font>
                   <Font name="Navilu" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="login_btn" layoutX="135.0" layoutY="274.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Log In" textFill="#f2eeee">
+            <Button fx:id="login_btn" layoutX="135.0" layoutY="274.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Log In" textFill="#fc0d0d">
                <font>
                   <Font name="Nakula" size="20.0" />
                </font>
