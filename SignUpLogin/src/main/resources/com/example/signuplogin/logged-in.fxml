@@ -8,12 +8,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signuplogin.LoggedInController">
    <children>
       <AnchorPane fx:id="anchor_pane_loggedin" prefHeight="400.0" prefWidth="607.0" style="-fx-background-color: black;">
          <children>
-            <Label fx:id="label_secret" layoutX="164.0" layoutY="272.0" prefHeight="33.0" prefWidth="311.0" text="You choose to learn.." textFill="#f2ecec">
+            <Label fx:id="label_secret" layoutX="115.0" layoutY="272.0" prefHeight="34.0" prefWidth="344.0" text="You choose to learn.." textFill="#f2ecec">
                <font>
                   <Font name="Nakula" size="18.0" />
                </font>

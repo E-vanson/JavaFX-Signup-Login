@@ -36,7 +36,7 @@ public class DBUtils {
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(title);
-        stage.setScene(new Scene(root,600,600));
+        stage.setScene(new Scene(root,700,700));
         stage.show();
     }
 
@@ -64,7 +64,7 @@ public class DBUtils {
                 psInsert.setString(3,chosenScrt);
                 psInsert.executeUpdate();
 
-                changeScene(event,"Log In","log-in.fxml",username,chosenScrt);
+                changeScene(event,"Welcome "+ username + "!","logged-in.fxml", username, chosenScrt);
             }
         }catch(SQLException e){
             e.printStackTrace();

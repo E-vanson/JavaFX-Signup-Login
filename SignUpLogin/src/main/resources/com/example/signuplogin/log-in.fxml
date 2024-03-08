@@ -11,25 +11,6 @@
 
 <HBox fx:id="hbox_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signuplogin.LoginController">
    <children>
-      <AnchorPane fx:id="anchor_pane_login" prefHeight="400.0" prefWidth="302.0" style="-fx-background-color: black;">
-         <children>
-            <Label fx:id="label_login" layoutX="104.0" layoutY="155.0" text="Login" textFill="#f5f3f3">
-               <font>
-                  <Font name="Nakula" size="36.0" />
-               </font>
-            </Label>
-            <ImageView fx:id="img_login" fitHeight="167.0" fitWidth="293.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Logo.jpeg" />
-               </image>
-            </ImageView>
-            <Label fx:id="label2_login" layoutX="31.0" layoutY="284.0" text="LogIn To Learn The Secret Art" textFill="#fffbfb">
-               <font>
-                  <Font name="Nakula" size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
       <AnchorPane fx:id="anchor_pane2_login" prefHeight="400.0" prefWidth="316.0" style="-fx-background-color: black;">
          <children>
             <Label fx:id="label5_login" layoutX="13.0" layoutY="337.0" text="Dont Have An Account?" textFill="#eeeaea">
@@ -37,7 +18,7 @@
                   <Font name="Nakula" size="15.0" />
                </font>
             </Label>
-            <ImageView fx:id="img2_login" fitHeight="167.0" fitWidth="307.0" layoutX="110.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img2_login" fitHeight="167.0" fitWidth="307.0" layoutX="87.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Batman.jpeg" />
                </image>
@@ -64,6 +45,25 @@
                   <Font name="Nakula" size="20.0" />
                </font>
             </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_pane_login" prefHeight="400.0" prefWidth="302.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="label_login" layoutX="104.0" layoutY="155.0" text="Login" textFill="#f5f3f3">
+               <font>
+                  <Font name="Nakula" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img_login" fitHeight="167.0" fitWidth="293.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Logo.jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="label2_login" layoutX="31.0" layoutY="284.0" text="LogIn To Learn The Secret Art" textFill="#fffbfb">
+               <font>
+                  <Font name="Nakula" size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

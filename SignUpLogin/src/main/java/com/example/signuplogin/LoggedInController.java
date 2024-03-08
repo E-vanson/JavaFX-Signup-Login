@@ -34,6 +34,6 @@ public class LoggedInController implements Initializable {
 
     public void setUserInfo(String username, String secret){
         label_welcome.setText("Welcome " + username + "!");
-        label_secret.setText("You choose the secret " + secret);
+        label_secret.setText("You choose the secret of " + secret);
     }
 }

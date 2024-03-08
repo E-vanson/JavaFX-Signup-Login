@@ -19,14 +19,14 @@
                   <Image url="@Logo.jpeg" />
                </image>
             </ImageView>
-            <Label fx:id="label2_sign_up" layoutX="64.0" layoutY="226.0" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: black;" text="I'm Watching You" textFill="#dad4d4">
+            <Label fx:id="label2_sign_up" layoutX="74.0" layoutY="226.0" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: black;" text="I am Batman" textFill="#dad4d4">
                <font>
-                  <Font name="DejaVu Sans Bold" size="14.0" />
+                  <Font name="Nakula" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="label1_sign_up" layoutX="105.0" layoutY="156.0" text="SIGN UP" textFill="#fcf8f8">
+            <Label fx:id="label1_sign_up" layoutX="74.0" layoutY="147.0" text="SIGN UP" textFill="#fcf8f8">
                <font>
-                  <Font name="Ubuntu Mono" size="18.0" />
+                  <Font name="Nakula" size="36.0" />
                </font>
             </Label>
          </children>
@@ -38,7 +38,7 @@
                   <Font name="Nakula" size="18.0" />
                </font>
             </Button>
-            <ImageView fx:id="img2_sign_up" fitHeight="126.0" fitWidth="100.0" layoutX="123.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img2_sign_up" fitHeight="126.0" fitWidth="100.0" layoutX="123.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Batman.jpeg" />
                </image>
